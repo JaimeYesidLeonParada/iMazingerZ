@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "GBTMazingerViewController.h"
+#import "GBTMazingerZ.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    GBTMazingerViewController *mVC = [[GBTMazingerViewController alloc]initWithAnnotationObject:[GBTMazingerZ new]];
+    
+    UINavigationController *navVC = [[UINavigationController alloc]initWithRootViewController:mVC];
+    
+    self.window.rootViewController = navVC;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

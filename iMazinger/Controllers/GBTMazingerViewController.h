@@ -10,4 +10,6 @@
 
 @interface GBTMazingerViewController : UIViewController
 
+-(id)initWithAnnotationObject:(id<MKAnnotation>)model;
+
 @end

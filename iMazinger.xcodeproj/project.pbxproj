@@ -19,6 +19,12 @@
 		0535521319BE4D4700CA476F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053551FB19BE4D4700CA476F /* UIKit.framework */; };
 		0535521B19BE4D4700CA476F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0535521919BE4D4700CA476F /* InfoPlist.strings */; };
 		0535521D19BE4D4700CA476F /* iMazingerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535521C19BE4D4700CA476F /* iMazingerTests.m */; };
+		0535522719BE4D8E00CA476F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0535522619BE4D8E00CA476F /* MapKit.framework */; };
+		0535522919BE4D9800CA476F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0535522819BE4D9800CA476F /* CoreLocation.framework */; };
+		0535522D19BE4EA700CA476F /* GBTMazingerZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535522C19BE4EA700CA476F /* GBTMazingerZ.m */; };
+		0535523219BE552200CA476F /* GBTMazingerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0535523019BE552200CA476F /* GBTMazingerViewController.m */; };
+		0535523319BE552200CA476F /* GBTMazingerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0535523119BE552200CA476F /* GBTMazingerViewController.xib */; };
+		0535523719BE5EB300CA476F /* mazinger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0535523619BE5EB300CA476F /* mazinger.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,14 @@
 		0535521819BE4D4700CA476F /* iMazingerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iMazingerTests-Info.plist"; sourceTree = "<group>"; };
 		0535521A19BE4D4700CA476F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0535521C19BE4D4700CA476F /* iMazingerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMazingerTests.m; sourceTree = "<group>"; };
+		0535522619BE4D8E00CA476F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0535522819BE4D9800CA476F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0535522B19BE4EA700CA476F /* GBTMazingerZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTMazingerZ.h; path = Models/GBTMazingerZ.h; sourceTree = "<group>"; };
+		0535522C19BE4EA700CA476F /* GBTMazingerZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTMazingerZ.m; path = Models/GBTMazingerZ.m; sourceTree = "<group>"; };
+		0535522F19BE552200CA476F /* GBTMazingerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBTMazingerViewController.h; path = Controllers/GBTMazingerViewController.h; sourceTree = "<group>"; };
+		0535523019BE552200CA476F /* GBTMazingerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBTMazingerViewController.m; path = Controllers/GBTMazingerViewController.m; sourceTree = "<group>"; };
+		0535523119BE552200CA476F /* GBTMazingerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GBTMazingerViewController.xib; path = Controllers/GBTMazingerViewController.xib; sourceTree = "<group>"; };
+		0535523619BE5EB300CA476F /* mazinger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mazinger.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0535522919BE4D9800CA476F /* CoreLocation.framework in Frameworks */,
+				0535522719BE4D8E00CA476F /* MapKit.framework in Frameworks */,
 				053551FA19BE4D4700CA476F /* CoreGraphics.framework in Frameworks */,
 				053551FC19BE4D4700CA476F /* UIKit.framework in Frameworks */,
 				053551F819BE4D4700CA476F /* Foundation.framework in Frameworks */,
@@ -96,6 +112,8 @@
 		053551F619BE4D4700CA476F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0535522819BE4D9800CA476F /* CoreLocation.framework */,
+				0535522619BE4D8E00CA476F /* MapKit.framework */,
 				053551F719BE4D4700CA476F /* Foundation.framework */,
 				053551F919BE4D4700CA476F /* CoreGraphics.framework */,
 				053551FB19BE4D4700CA476F /* UIKit.framework */,
@@ -107,6 +125,9 @@
 		053551FD19BE4D4700CA476F /* iMazinger */ = {
 			isa = PBXGroup;
 			children = (
+				0535523419BE5E8600CA476F /* Resources */,
+				0535522E19BE54F300CA476F /* Controllers */,
+				0535522A19BE4E7800CA476F /* Models */,
 				0535520619BE4D4700CA476F /* AppDelegate.h */,
 				0535520719BE4D4700CA476F /* AppDelegate.m */,
 				0535520919BE4D4700CA476F /* Images.xcassets */,
@@ -142,6 +163,41 @@
 				0535521919BE4D4700CA476F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0535522A19BE4E7800CA476F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0535522B19BE4EA700CA476F /* GBTMazingerZ.h */,
+				0535522C19BE4EA700CA476F /* GBTMazingerZ.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0535522E19BE54F300CA476F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0535522F19BE552200CA476F /* GBTMazingerViewController.h */,
+				0535523019BE552200CA476F /* GBTMazingerViewController.m */,
+				0535523119BE552200CA476F /* GBTMazingerViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0535523419BE5E8600CA476F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0535523519BE5EA600CA476F /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0535523519BE5EA600CA476F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0535523619BE5EB300CA476F /* mazinger.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +275,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0535523719BE5EB300CA476F /* mazinger.jpg in Resources */,
+				0535523319BE552200CA476F /* GBTMazingerViewController.xib in Resources */,
 				0535520219BE4D4700CA476F /* InfoPlist.strings in Resources */,
 				0535520A19BE4D4700CA476F /* Images.xcassets in Resources */,
 			);
@@ -240,7 +298,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0535520819BE4D4700CA476F /* AppDelegate.m in Sources */,
+				0535522D19BE4EA700CA476F /* GBTMazingerZ.m in Sources */,
 				0535520419BE4D4700CA476F /* main.m in Sources */,
+				0535523219BE552200CA476F /* GBTMazingerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

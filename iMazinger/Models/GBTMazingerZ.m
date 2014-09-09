@@ -10,4 +10,27 @@
 
 @implementation GBTMazingerZ
 
+-(id)init
+{
+    if (self = [super init]) {
+        _coordinate = CLLocationCoordinate2DMake(41.3827416, 1.32880926);
+    }
+    return self;
+}
+
+
+#pragma mark - MKAnnotation
+
+@synthesize coordinate = _coordinate;
+
+-(NSString*)title
+{
+    return @"Mazinger";
+}
+
+-(NSString*)subtitle
+{
+    return @"Meca de frikis";
+}
+
 @end

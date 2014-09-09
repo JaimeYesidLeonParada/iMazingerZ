@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GBTMazingerZ : NSObject
+
+@interface GBTMazingerZ : NSObject <MKAnnotation>
 
 @end
